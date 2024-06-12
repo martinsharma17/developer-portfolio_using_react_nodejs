@@ -13,7 +13,7 @@ function BlogCard({ blog }) {
       <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
         <Image
           src={blog?.cover_image}
-          height={1080}
+          height={2080}
           width={1920}
           alt=""
           className='h-full w-full group-hover:scale-110 transition-all duration-300'
