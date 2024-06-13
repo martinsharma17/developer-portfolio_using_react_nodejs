@@ -28,7 +28,7 @@ function ContactWithCaptcha() {
 
   const handleSendMail = async (e) => {
     if (!captcha) {
-      toast.error('Please complete the captcha!');
+      toast.error('Please complete the captcha!!!!');
       return;
     } else {
       const res = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/google`, {
@@ -37,7 +37,7 @@ function ContactWithCaptcha() {
 
       setCaptcha(null);
       if (!res.data.success) {
-        toast.error('Captcha verification failed!');
+        toast.error('Captcha verification failed!!!!');
         return;
       };
     };
